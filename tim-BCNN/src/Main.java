@@ -11,32 +11,28 @@ public class Main {
         int num2 = scanner.nextInt();
 
         //CÁCH 1
-//        int bcnn = num1 > num2 ? num1 : num2;
-//        while (true) {
-//            if (bcnn % num1 == 0 && bcnn % num1 == 0) {
-//                System.out.println("Bội chung nhỏ nhất của " + num1 + " và " + num2 + " là: " + bcnn);
-//                break;
-//            }
-//            bcnn++;
-//        }
-
-        //CÁCH 2:
-        if (num1 == 0 || num2 == 0){
-            System.out.println("Bội chung nhỏ nhất của " + num1 + " và " + num2 + " là: " + 0);
-        } else {
-            int ucln = num1 < num2 ? num1 : num2;
-            while (true) {
-                if (num1 % ucln == 0 && num2 % ucln == 0) {
-                    System.out.println("Bội chung nhỏ nhất của " + num1 + " và " + num2 + " là: " + num1 * num2 / ucln);
-                    break;
-                }
-                ucln--;
+        int bcnn = num1 > num2 ? num1 : num2;
+        while (true) {
+            if (bcnn % num1 == 0 && bcnn % num1 == 0) {
+                System.out.println("Bội chung nhỏ nhất của " + num1 + " và " + num2 + " là: " + bcnn);
+                break;
             }
+            bcnn++;
         }
 
-
-
-
+        //CÁCH 2:
+//        if (num1 == 0 || num2 == 0){
+//            System.out.println("Bội chung nhỏ nhất của " + num1 + " và " + num2 + " là: " + 0);
+//        } else {
+//            int ucln = num1 < num2 ? num1 : num2;
+//            while (true) {
+//                if (num1 % ucln == 0 && num2 % ucln == 0) {
+//                    System.out.println("Bội chung nhỏ nhất của " + num1 + " và " + num2 + " là: " + num1 * num2 / ucln);
+//                    break;
+//                }
+//                ucln--;
+//            }
+//        }
 
 
         //TÌM BỘI CHUNG NHỎ NHẤT 3 SỐ:
